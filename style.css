@@ -1,0 +1,51 @@
+body , html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.form{display: flex;
+     align-items: center;
+     justify-content: center;
+     transition: all 1s ease;
+     position: relative;
+     height: 100vh;}
+
+.form-row{display: flex;
+          justify-content: space-between;
+          flex-direction: row !important;
+          gap: 1em;}
+
+.form-wrapper div {display: flex;
+                   margin-block: .25em;
+                   flex-direction: column;}
+
+h2{font-size: 1em;}
+
+li{opacity: .7;}
+
+button{width: 300px;
+       cursor: pointer;
+       padding: 1em 2em;
+       border-radius: 25px;
+       border: 1px solid white;}
+
+input{padding: 1em;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+
+
+.error{color: red;}
+
+.form-validation{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50% , -50%);
+     transition: all 1s ease;
+     opacity: 0;
+     pointer-events: none;
+
+     h1{text-align: center;
+        }
+}

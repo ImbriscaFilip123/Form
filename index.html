@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema Formular Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form">
+        <div class="form-validation">
+            <img src="form-validation.png" alt="">
+            <h1>Felicitari! <br>
+              Te-ai conectat cu succes!</h1>
+
+              <h2>Acestea sunt datele tale</h2>
+          
+          </div>
+        <div class="form-wrapper">
+
+    
+
+            <div class="form-row">
+                <div>
+                    <label for="name">Nume</label>
+                    <input type="text" placeholder="Popescu Vasile" class="formName">
+                    <span id="nameError" class="error"></span>
+                </div>
+            
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="popescuvasile@yahoo.ro" class="formEmail">
+                    <span id="emailError" class="error"></span>
+                </div>
+            </div>
+            <div>
+                <label for="adress">Adresa</label>
+                <input type="text" placeholder="Strada Alexandru Ioan Cuza nr.4" class="formAdress">
+                <span id="adressError" class="error"></span>
+            </div>
+            
+            <div class="form-row">
+                <div>
+                    <label for="company">Companie (optional)</label>
+                    <input type="text" placeholder="Firma SRL">
+                </div>
+                <div>
+                     <label for="CUI">CUI (optional)</label>
+                     <input type="number" placeholder="54434223">
+                </div>
+            
+            </div>
+          
+               <div>
+                   <label for="password">Adauga Parola</label>
+                   <input type="password" class="formPassword">
+                   <span id="passwordError" class="error"></span>
+               </div>
+           
+               <div>
+                <h2>Parola trebuie să conțină</h2>
+                 <ul>
+                   <li>Minim 8 caractere</li>
+                   <li>Cel putin un caracter special</li>
+                   <li>Cel putin un numar</li>
+                 </ul>
+              </div>
+            
+            <button class="formSubmit">Trimite</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
